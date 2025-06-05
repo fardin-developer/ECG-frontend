@@ -223,28 +223,15 @@ export default function DataLoadingPage() {
 
       {/* Controls (only appear when data is loaded) */}
       {loadedData.length > 0 && (
-        <div className="flex flex-wrap gap-2 justify-between w-full max-w-3xl">
-          <div className="flex gap-2">
+        <div className=" gap-2 flex-end max-w-3xl">
+          <div className=" gap-2 right-0">
             <button
               onClick={clearData}
               className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md"
             >
               Clear Data
             </button>
-            <button
-              onClick={exportData}
-              className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
-            >
-              Export CSV
-            </button>
-          </div>
-          <div className="flex gap-2">
-            <button className="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-md">
-              Peak Detection
-            </button>
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md">
-              Heart Rate Analysis
-            </button>
+
           </div>
         </div>
       )}
